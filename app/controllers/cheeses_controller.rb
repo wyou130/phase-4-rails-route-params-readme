@@ -5,4 +5,9 @@ class CheesesController < ApplicationController
     render json: cheeses
   end
 
+  def show
+    # byebug
+    render json: Cheese.find(params[:id])
+  end
+
 end
